@@ -6,6 +6,8 @@ on:
 jobs:
   prepare:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -14,7 +16,11 @@ jobs:
           cache: pip
       - run: pip install huggingface-hub==2.4.0
       - run: python scripts/prepare_data.py --out data
-      - uses: actions/upload-artifact@v4
-        with:
-          name: data
-          path: data/
+      - name: Commit the dataset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && { echo "dataset unchanged"; exit 0; }
+          git commit -m "Dataset from FiNER-139 (data workflow run ${{ github.run_id }})"
+          git push

@@ -109,6 +109,16 @@ jobs:
         with:
           name: reports
           path: reports/
+      - name: Commit the reports
+        if: ${{ !inputs.smoke }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp build/finetuned/train_summary.json build/finetuned/train_history.json reports/
+          git add reports
+          git commit -m "Pipeline results (run ${{ github.run_id }})"
+          git pull --rebase
+          git push
       - name: Release the fine-tuned model
         if: ${{ !inputs.smoke }}
         env:
