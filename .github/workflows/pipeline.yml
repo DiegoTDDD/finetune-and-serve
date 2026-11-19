@@ -1,0 +1,120 @@
+name: pipeline
+
+# Fine-tune, export, evaluate and benchmark, all on a free 4-core CPU runner.
+# smoke=true runs every step on a handful of examples to check the plumbing.
+on:
+  workflow_dispatch:
+    inputs:
+      smoke:
+        description: Tiny run to check the pipeline
+        type: boolean
+        default: true
+
+env:
+  LLAMA_CPP_TAG: b12400
+  BASE_MODEL: Qwen/Qwen2.5-0.5B-Instruct
+  LARGE_GGUF_REPO: Qwen/Qwen2.5-3B-Instruct-GGUF
+  LARGE_GGUF_FILE: qwen2.5-3b-instruct-q4_k_m.gguf
+
+jobs:
+  train:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/check_data.py
+      - name: Fine-tune
+        run: |
+          if [ "${{ inputs.smoke }}" = "true" ]; then
+            python scripts/train.py --out build/finetuned --limit 16 --val-limit 8
+          else
+            python scripts/train.py --out build/finetuned --max-minutes 300
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: finetuned
+          path: build/finetuned/
+          retention-days: 7
+
+  evaluate:
+    needs: train
+    runs-on: ubuntu-24.04
+    timeout-minutes: 340
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: llama.cpp source
+        run: git clone --depth 1 --branch "$LLAMA_CPP_TAG" https://github.com/ggml-org/llama.cpp llama.cpp
+      - uses: actions/cache@v4
+        id: llama-build
+        with:
+          path: llama.cpp/build/bin
+          key: llama-cpp-${{ env.LLAMA_CPP_TAG }}-ubuntu-24.04-v1
+      - name: Build llama.cpp
+        if: steps.llama-build.outputs.cache-hit != 'true'
+        run: |
+          cmake -S llama.cpp -B llama.cpp/build -DCMAKE_BUILD_TYPE=Release -DLLAMA_CURL=OFF \
+            -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF -DBUILD_SHARED_LIBS=OFF
+          cmake --build llama.cpp/build -j4 --target llama-server llama-quantize
+      - run: pip install ./llama.cpp/gguf-py
+      - uses: actions/download-artifact@v4
+        with:
+          name: finetuned
+          path: build/finetuned
+      - name: Export GGUF
+        run: |
+          python scripts/export_gguf.py --hf build/finetuned/merged --name finetuned --llama-cpp llama.cpp --types F16 Q8_0 Q4_K_M
+          REV=$(python -c "import json;print(json.load(open('build/finetuned/train_summary.json'))['base_revision'])")
+          python -c "from huggingface_hub import snapshot_download as s; s('$BASE_MODEL', revision='$REV', local_dir='build/base')"
+          python scripts/export_gguf.py --hf build/base --name base --llama-cpp llama.cpp --types Q4_K_M
+          python -c "from huggingface_hub import hf_hub_download as d; print(d('$LARGE_GGUF_REPO', '$LARGE_GGUF_FILE', local_dir='build/gguf'))"
+          ls -la build/gguf
+      - name: Evaluate
+        run: |
+          LIMIT=""; [ "${{ inputs.smoke }}" = "true" ] && LIMIT="--limit 6"
+          S=llama.cpp/build/bin/llama-server
+          python scripts/evaluate.py --name base-0.5b-zero-shot --model build/gguf/base-Q4_K_M.gguf --server $S $LIMIT
+          python scripts/evaluate.py --name base-0.5b-few-shot --model build/gguf/base-Q4_K_M.gguf --server $S --shots 6 $LIMIT
+          python scripts/evaluate.py --name finetuned-0.5b-F16 --model build/gguf/finetuned-F16.gguf --server $S $LIMIT
+          python scripts/evaluate.py --name finetuned-0.5b-Q8_0 --model build/gguf/finetuned-Q8_0.gguf --server $S $LIMIT
+          python scripts/evaluate.py --name finetuned-0.5b-Q4_K_M --model build/gguf/finetuned-Q4_K_M.gguf --server $S $LIMIT
+          python scripts/evaluate.py --name base-3b-zero-shot --model build/gguf/$LARGE_GGUF_FILE --server $S $LIMIT
+          python scripts/evaluate.py --name base-3b-few-shot --model build/gguf/$LARGE_GGUF_FILE --server $S --shots 6 $LIMIT
+      - name: Benchmark
+        run: |
+          N=100; [ "${{ inputs.smoke }}" = "true" ] && N=8
+          S=llama.cpp/build/bin/llama-server
+          python scripts/benchmark.py --name finetuned-0.5b-Q4_K_M --model build/gguf/finetuned-Q4_K_M.gguf --server $S --requests $N
+          python scripts/benchmark.py --name base-3b-few-shot --model build/gguf/$LARGE_GGUF_FILE --server $S --shots 6 --requests $N
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Results (smoke=${{ inputs.smoke }})" >> "$GITHUB_STEP_SUMMARY"
+          for f in reports/runs/*.json; do
+            python -c "import json,sys;r=json.load(open(sys.argv[1]));s=r['scores'];print(f\"- {r['name']}: fact F1 {s['fact']['f1']}, value F1 {s['value']['f1']}, exact {s['exact_match']}, p50 {r['latency_s']['p50']}s\")" "$f" >> "$GITHUB_STEP_SUMMARY"
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reports
+          path: reports/
+      - name: Release the fine-tuned model
+        if: ${{ !inputs.smoke }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tar -czf adapter.tar.gz -C build/finetuned adapter train_summary.json
+          gh release create "model-${{ github.run_id }}" build/gguf/finetuned-Q4_K_M.gguf build/gguf/finetuned-Q8_0.gguf adapter.tar.gz \
+            --title "Fine-tuned Qwen2.5-0.5B for XBRL fact tagging (run ${{ github.run_id }})" \
+            --notes "LoRA adapter and GGUF exports from pipeline run ${{ github.run_id }} (commit ${{ github.sha }}). Results: reports/ in the repository."
