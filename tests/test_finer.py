@@ -1,3 +1,5 @@
+import pytest
+
 from ftserve.finer import Example, Fact, detokenize, facts, in_scope, parse_labels, tag_counts
 
 SCRIPT = """
@@ -51,6 +53,17 @@ def test_facts_spans():
         Fact("56", "IncomeTaxExpenseBenefit"),
         Fact("78", "DebtInstrumentFaceAmount"),
     ]
+
+
+def test_string_labels_as_in_the_raw_files():
+    toks = ["$", "1", ",", "234", "and", "56"]
+    tags = ["O", "B-DebtInstrumentFaceAmount", "I-DebtInstrumentFaceAmount", "I-DebtInstrumentFaceAmount", "O", "3"]
+    assert facts(toks, tags, LABELS) == [
+        Fact("1,234", "DebtInstrumentFaceAmount"),
+        Fact("56", "IncomeTaxExpenseBenefit"),
+    ]
+    with pytest.raises(ValueError):
+        facts(["1"], ["B-Nope"], LABELS)
 
 
 def test_adjacent_b_tags_are_separate_facts():

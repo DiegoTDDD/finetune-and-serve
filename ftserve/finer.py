@@ -45,13 +45,24 @@ class Fact:
     tag: str
 
 
-def facts(tokens: list[str], tags: list[int], labels: list[str]) -> list[Fact]:
+def label_of(tag: int | str, labels: list[str]) -> str:
+    """The raw files store tags as label strings; the Hugging Face loader turns them into ids."""
+    if isinstance(tag, int):
+        return labels[tag]
+    if tag.isdigit():
+        return labels[int(tag)]
+    if tag not in labels:
+        raise ValueError(f"unknown label {tag!r}")
+    return tag
+
+
+def facts(tokens: list[str], tags: list[int | str], labels: list[str]) -> list[Fact]:
     """IOB2 spans to facts; a span's value is its tokens joined without spaces (spans are
     numbers, so "1,234" or "7.00" stay as written)."""
     out: list[Fact] = []
     value, tag = None, None
     for tok, t in zip(tokens, tags, strict=True):
-        label = labels[t]
+        label = label_of(t, labels)
         if label.startswith("B-") or (label.startswith("I-") and label[2:] != tag):
             if value is not None:
                 out.append(Fact(value, tag))
