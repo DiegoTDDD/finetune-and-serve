@@ -35,7 +35,7 @@ class TrainConfig:
     batch_size: int = 4
     grad_accum: int = 4
     warmup_frac: float = 0.05
-    max_len: int = 512
+    max_len: int = 1024
     seed: int = 0
     max_minutes: float = 300.0
     gradient_checkpointing: bool = True
@@ -114,6 +114,10 @@ def train(
     too_long = [e.id for e, x in zip(train_set, enc_train, strict=True) if len(x["input_ids"]) > cfg.max_len]
     if too_long:
         raise ValueError(f"{len(too_long)} training examples exceed max_len {cfg.max_len}")
+    lengths = sorted(len(x["input_ids"]) for x in enc_train)
+    answers = sorted(sum(t != -100 for t in x["labels"]) for x in enc_train)
+    median, answer_median = lengths[len(lengths) // 2], answers[len(answers) // 2]
+    log(f"tokens per example: median {median}, max {lengths[-1]}; answer median {answer_median}")
 
     if cfg.gradient_checkpointing:
         kwargs = {"use_reentrant": False}
