@@ -1,0 +1,57 @@
+{
+ "source": "https://huggingface.co/datasets/nlpaueb/finer-139",
+ "revision": "080f677a026e304c38666d759ef625d621dc8cb9",
+ "license": "CC BY-SA 4.0",
+ "raw_sentences": {
+  "train": 900384,
+  "validation": 112494,
+  "test": 108378
+ },
+ "tags": {
+  "DebtInstrumentInterestRateStatedPercentage": 15208,
+  "LineOfCreditFacilityMaximumBorrowingCapacity": 11693,
+  "DebtInstrumentBasisSpreadOnVariableRate1": 11445,
+  "DebtInstrumentFaceAmount": 10749,
+  "AllocatedShareBasedCompensationExpense": 8710,
+  "AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount": 7711,
+  "EffectiveIncomeTaxRateContinuingOperations": 7379,
+  "AmortizationOfIntangibleAssets": 6421,
+  "ConcentrationRiskPercentage1": 5456,
+  "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod": 4817,
+  "EquityMethodInvestmentOwnershipPercentage": 4545,
+  "IncomeTaxExpenseBenefit": 4530
+ },
+ "params": {
+  "out": "data",
+  "tags": 12,
+  "train": 2000,
+  "val": 150,
+  "test": 300,
+  "neg_frac": 0.2,
+  "seed": 0,
+  "max_chars": 400
+ },
+ "sets": {
+  "train": {
+   "sentences": 2000,
+   "facts": 2821,
+   "no_facts": 400
+  },
+  "val": {
+   "sentences": 150,
+   "facts": 201,
+   "no_facts": 30
+  },
+  "test": {
+   "sentences": 300,
+   "facts": 362,
+   "no_facts": 60
+  }
+ },
+ "sha256": {
+  "tags.json": "1ca9ea1832d86bd8da86af153eee63c6f08c17f17e10ed6522cba5d3410322b6",
+  "train.jsonl": "6ee0500aee16774eb316423b2a0196045740a15a90acc26482d494342b8f19ca",
+  "val.jsonl": "ca46efc41a487b19b7f3eff35a570e1deade5afe67cc03996b55125978887c95",
+  "test.jsonl": "17760d5447946c7b66b858eb9edd9410ab4a4cdb38a667db83dbbd37d2e90ae4"
+ }
+}
