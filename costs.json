@@ -1,0 +1,22 @@
+{
+ "checked": "2026-11-19",
+ "vm": {
+  "name": "AWS EC2 m7i.xlarge, us-east-1, on-demand Linux (4 vCPU, 16 GiB: the same size as the GitHub runner that produced the measurements)",
+  "usd_per_hour": 0.2016,
+  "source": "https://instances.vantage.sh/aws/ec2/m7i.xlarge"
+ },
+ "apis": [
+  {
+   "name": "Claude Haiku 5.5",
+   "input_usd_per_mtok": 0.10,
+   "output_usd_per_mtok": 0.50,
+   "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  {
+   "name": "GPT-5.4 mini",
+   "input_usd_per_mtok": 0.75,
+   "output_usd_per_mtok": 4.50,
+   "source": "https://pricepertoken.com/pricing-page/model/openai-gpt-5.4-mini"
+  }
+ ]
+}

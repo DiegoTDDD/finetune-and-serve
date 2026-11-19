@@ -65,7 +65,8 @@ jobs:
         if: steps.llama-build.outputs.cache-hit != 'true'
         run: |
           cmake -S llama.cpp -B llama.cpp/build -DCMAKE_BUILD_TYPE=Release -DLLAMA_CURL=OFF \
-            -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF -DBUILD_SHARED_LIBS=OFF
+            -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF -DBUILD_SHARED_LIBS=OFF \
+            -DLLAMA_USE_PREBUILT_UI=OFF -DLLAMA_BUILD_UI=OFF
           cmake --build llama.cpp/build -j4 --target llama-server llama-quantize
       - run: pip install ./llama.cpp/gguf-py
       - uses: actions/download-artifact@v4
@@ -97,13 +98,11 @@ jobs:
           S=llama.cpp/build/bin/llama-server
           python scripts/benchmark.py --name finetuned-0.5b-Q4_K_M --model build/gguf/finetuned-Q4_K_M.gguf --server $S --requests $N
           python scripts/benchmark.py --name base-3b-few-shot --model build/gguf/$LARGE_GGUF_FILE --server $S --shots 6 --requests $N
-      - name: Summary
-        if: always()
+      - name: Report
         run: |
-          echo "## Results (smoke=${{ inputs.smoke }})" >> "$GITHUB_STEP_SUMMARY"
-          for f in reports/runs/*.json; do
-            python -c "import json,sys;r=json.load(open(sys.argv[1]));s=r['scores'];print(f\"- {r['name']}: fact F1 {s['fact']['f1']}, value F1 {s['value']['f1']}, exact {s['exact_match']}, p50 {r['latency_s']['p50']}s\")" "$f" >> "$GITHUB_STEP_SUMMARY"
-          done
+          cp build/finetuned/train_summary.json build/finetuned/train_history.json reports/
+          python scripts/report.py
+          cat reports/results.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -114,7 +113,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          cp build/finetuned/train_summary.json build/finetuned/train_history.json reports/
           git add reports
           git commit -m "Pipeline results (run ${{ github.run_id }})"
           git pull --rebase
