@@ -1,0 +1,187 @@
+{
+ "runs": {
+  "base-0.5b-few-shot": {
+   "scores": {
+    "fact": {
+     "precision": 0.2521,
+     "recall": 0.2541,
+     "f1": 0.2531
+    },
+    "value": {
+     "precision": 0.474,
+     "recall": 0.4779,
+     "f1": 0.4759
+    },
+    "exact_match": 0.16
+   },
+   "latency_s": {
+    "mean": 1.033,
+    "p50": 0.919,
+    "p95": 1.699
+   }
+  },
+  "base-0.5b-zero-shot": {
+   "scores": {
+    "fact": {
+     "precision": 0.1663,
+     "recall": 0.2182,
+     "f1": 0.1888
+    },
+    "value": {
+     "precision": 0.3895,
+     "recall": 0.511,
+     "f1": 0.4421
+    },
+    "exact_match": 0.1167
+   },
+   "latency_s": {
+    "mean": 1.255,
+    "p50": 0.972,
+    "p95": 2.35
+   }
+  },
+  "base-3b-few-shot": {
+   "scores": {
+    "fact": {
+     "precision": 0.6786,
+     "recall": 0.6298,
+     "f1": 0.6533
+    },
+    "value": {
+     "precision": 0.8125,
+     "recall": 0.7541,
+     "f1": 0.7822
+    },
+    "exact_match": 0.6
+   },
+   "latency_s": {
+    "mean": 3.521,
+    "p50": 3.187,
+    "p95": 7.825
+   }
+  },
+  "base-3b-zero-shot": {
+   "scores": {
+    "fact": {
+     "precision": 0.7324,
+     "recall": 0.1436,
+     "f1": 0.2402
+    },
+    "value": {
+     "precision": 0.9014,
+     "recall": 0.1768,
+     "f1": 0.2956
+    },
+    "exact_match": 0.2867
+   },
+   "latency_s": {
+    "mean": 1.561,
+    "p50": 1.072,
+    "p95": 4.9
+   }
+  },
+  "finetuned-0.5b-F16": {
+   "scores": {
+    "fact": {
+     "precision": 0.7754,
+     "recall": 0.8867,
+     "f1": 0.8273
+    },
+    "value": {
+     "precision": 0.8261,
+     "recall": 0.9448,
+     "f1": 0.8814
+    },
+    "exact_match": 0.7433
+   },
+   "latency_s": {
+    "mean": 1.696,
+    "p50": 1.491,
+    "p95": 3.373
+   }
+  },
+  "finetuned-0.5b-Q4_K_M": {
+   "scores": {
+    "fact": {
+     "precision": 0.7696,
+     "recall": 0.8674,
+     "f1": 0.8156
+    },
+    "value": {
+     "precision": 0.8333,
+     "recall": 0.9392,
+     "f1": 0.8831
+    },
+    "exact_match": 0.7467
+   },
+   "latency_s": {
+    "mean": 1.027,
+    "p50": 0.908,
+    "p95": 2.03
+   }
+  },
+  "finetuned-0.5b-Q8_0": {
+   "scores": {
+    "fact": {
+     "precision": 0.7476,
+     "recall": 0.8591,
+     "f1": 0.7995
+    },
+    "value": {
+     "precision": 0.8101,
+     "recall": 0.9309,
+     "f1": 0.8663
+    },
+    "exact_match": 0.7233
+   },
+   "latency_s": {
+    "mean": 0.83,
+    "p50": 0.717,
+    "p95": 1.674
+   }
+  }
+ },
+ "costs": {
+  "vm_usd_per_month": 147.17,
+  "self_hosted": {
+   "base-3b-few-shot": {
+    "concurrency": 4,
+    "requests_per_second": 0.429,
+    "usd_per_million_requests": 130.54,
+    "max_requests_per_month": 1127412
+   },
+   "finetuned-0.5b-Q4_K_M": {
+    "concurrency": 4,
+    "requests_per_second": 1.605,
+    "usd_per_million_requests": 34.89,
+    "max_requests_per_month": 4217940
+   }
+  },
+  "api": [
+   {
+    "api": "Claude Haiku 5.5",
+    "prompt": "few-shot",
+    "usd_per_million_requests": 91.11,
+    "break_even_requests_per_month": 1615278
+   },
+   {
+    "api": "Claude Haiku 5.5",
+    "prompt": "zero-shot",
+    "usd_per_million_requests": 44.76,
+    "break_even_requests_per_month": 3287935
+   },
+   {
+    "api": "GPT-5.4 mini",
+    "prompt": "few-shot",
+    "usd_per_million_requests": 705.98,
+    "break_even_requests_per_month": 208460
+   },
+   {
+    "api": "GPT-5.4 mini",
+    "prompt": "zero-shot",
+    "usd_per_million_requests": 343.88,
+    "break_even_requests_per_month": 427969
+   }
+  ]
+ }
+}

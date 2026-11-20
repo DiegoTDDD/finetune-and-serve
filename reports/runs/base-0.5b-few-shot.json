@@ -1,0 +1,137 @@
+{
+ "name": "base-0.5b-few-shot",
+ "model_file": "base-Q4_K_M.gguf",
+ "model_bytes": 397808096,
+ "shots": 6,
+ "shot_ids": [
+  "validation-969541",
+  "validation-912709",
+  "validation-950202",
+  "validation-951480",
+  "validation-957576",
+  "validation-1007120"
+ ],
+ "threads": 4,
+ "scores": {
+  "sentences": 300,
+  "gold_facts": 362,
+  "predicted_facts": 365,
+  "fact": {
+   "precision": 0.2521,
+   "recall": 0.2541,
+   "f1": 0.2531
+  },
+  "value": {
+   "precision": 0.474,
+   "recall": 0.4779,
+   "f1": 0.4759
+  },
+  "exact_match": 0.16,
+  "valid_json": 1.0,
+  "per_tag": {
+   "AllocatedShareBasedCompensationExpense": {
+    "precision": 0.3448,
+    "recall": 0.3226,
+    "f1": 0.3333,
+    "gold": 31
+   },
+   "AmortizationOfIntangibleAssets": {
+    "precision": 0.8,
+    "recall": 0.2667,
+    "f1": 0.4,
+    "gold": 15
+   },
+   "AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount": {
+    "precision": 0.2778,
+    "recall": 0.5769,
+    "f1": 0.375,
+    "gold": 26
+   },
+   "ConcentrationRiskPercentage1": {
+    "precision": 0.3125,
+    "recall": 0.1429,
+    "f1": 0.1961,
+    "gold": 35
+   },
+   "DebtInstrumentBasisSpreadOnVariableRate1": {
+    "precision": 1.0,
+    "recall": 0.0667,
+    "f1": 0.125,
+    "gold": 30
+   },
+   "DebtInstrumentFaceAmount": {
+    "precision": 0.125,
+    "recall": 0.2308,
+    "f1": 0.1622,
+    "gold": 39
+   },
+   "DebtInstrumentInterestRateStatedPercentage": {
+    "precision": 0.5333,
+    "recall": 0.1633,
+    "f1": 0.25,
+    "gold": 49
+   },
+   "EffectiveIncomeTaxRateContinuingOperations": {
+    "precision": 0.1733,
+    "recall": 0.4194,
+    "f1": 0.2453,
+    "gold": 31
+   },
+   "EquityMethodInvestmentOwnershipPercentage": {
+    "precision": 0.3333,
+    "recall": 0.0909,
+    "f1": 0.1429,
+    "gold": 22
+   },
+   "IncomeTaxExpenseBenefit": {
+    "precision": 0.5294,
+    "recall": 0.375,
+    "f1": 0.439,
+    "gold": 24
+   },
+   "LineOfCreditFacilityMaximumBorrowingCapacity": {
+    "precision": 0.2,
+    "recall": 0.2857,
+    "f1": 0.2353,
+    "gold": 49
+   },
+   "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod": {
+    "precision": 0.25,
+    "recall": 0.0909,
+    "f1": 0.1333,
+    "gold": 11
+   }
+  }
+ },
+ "latency_s": {
+  "mean": 1.033,
+  "p50": 0.919,
+  "p95": 1.699
+ },
+ "tokens_per_request": {
+  "prompt": 760.1,
+  "prompt_not_cached": 55.9,
+  "completion": 31.5
+ },
+ "warmup_response_usage": {
+  "usage": {
+   "completion_tokens": 23,
+   "prompt_tokens": 743,
+   "total_tokens": 766,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "timings": {
+   "cache_n": 0,
+   "prompt_n": 743,
+   "prompt_ms": 2635.286,
+   "prompt_per_token_ms": 3.5468183041722745,
+   "prompt_per_second": 281.9428327703331,
+   "predicted_n": 23,
+   "predicted_ms": 519.933,
+   "predicted_per_token_ms": 23.633318181818183,
+   "predicted_per_second": 42.313144193578786
+  }
+ }
+}

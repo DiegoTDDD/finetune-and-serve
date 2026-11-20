@@ -1,0 +1,130 @@
+{
+ "name": "base-3b-zero-shot",
+ "model_file": "qwen2.5-3b-instruct-q4_k_m.gguf",
+ "model_bytes": 2104932768,
+ "shots": 0,
+ "shot_ids": [],
+ "threads": 4,
+ "scores": {
+  "sentences": 300,
+  "gold_facts": 362,
+  "predicted_facts": 71,
+  "fact": {
+   "precision": 0.7324,
+   "recall": 0.1436,
+   "f1": 0.2402
+  },
+  "value": {
+   "precision": 0.9014,
+   "recall": 0.1768,
+   "f1": 0.2956
+  },
+  "exact_match": 0.2867,
+  "valid_json": 1.0,
+  "per_tag": {
+   "AllocatedShareBasedCompensationExpense": {
+    "precision": 0.75,
+    "recall": 0.1935,
+    "f1": 0.3077,
+    "gold": 31
+   },
+   "AmortizationOfIntangibleAssets": {
+    "precision": 1.0,
+    "recall": 0.2667,
+    "f1": 0.4211,
+    "gold": 15
+   },
+   "AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount": {
+    "precision": 1.0,
+    "recall": 0.0769,
+    "f1": 0.1429,
+    "gold": 26
+   },
+   "ConcentrationRiskPercentage1": {
+    "precision": 1.0,
+    "recall": 0.1429,
+    "f1": 0.25,
+    "gold": 35
+   },
+   "DebtInstrumentBasisSpreadOnVariableRate1": {
+    "precision": 1.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 30
+   },
+   "DebtInstrumentFaceAmount": {
+    "precision": 0.6667,
+    "recall": 0.1026,
+    "f1": 0.1778,
+    "gold": 39
+   },
+   "DebtInstrumentInterestRateStatedPercentage": {
+    "precision": 0.5806,
+    "recall": 0.3673,
+    "f1": 0.45,
+    "gold": 49
+   },
+   "EffectiveIncomeTaxRateContinuingOperations": {
+    "precision": 0.8667,
+    "recall": 0.4194,
+    "f1": 0.5652,
+    "gold": 31
+   },
+   "EquityMethodInvestmentOwnershipPercentage": {
+    "precision": 1.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 22
+   },
+   "IncomeTaxExpenseBenefit": {
+    "precision": 1.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 24
+   },
+   "LineOfCreditFacilityMaximumBorrowingCapacity": {
+    "precision": 1.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 49
+   },
+   "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod": {
+    "precision": 1.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 11
+   }
+  }
+ },
+ "latency_s": {
+  "mean": 1.561,
+  "p50": 1.072,
+  "p95": 4.9
+ },
+ "tokens_per_request": {
+  "prompt": 393.1,
+  "prompt_not_cached": 55.9,
+  "completion": 10.9
+ },
+ "warmup_response_usage": {
+  "usage": {
+   "completion_tokens": 6,
+   "prompt_tokens": 376,
+   "total_tokens": 382,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "timings": {
+   "cache_n": 0,
+   "prompt_n": 376,
+   "prompt_ms": 2951.37,
+   "prompt_per_token_ms": 7.84938829787234,
+   "prompt_per_second": 127.39846240898295,
+   "predicted_n": 6,
+   "predicted_ms": 456.357,
+   "predicted_per_token_ms": 91.2714,
+   "predicted_per_second": 10.956334623989552
+  }
+ }
+}

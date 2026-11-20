@@ -1,0 +1,130 @@
+{
+ "name": "base-0.5b-zero-shot",
+ "model_file": "base-Q4_K_M.gguf",
+ "model_bytes": 397808096,
+ "shots": 0,
+ "shot_ids": [],
+ "threads": 4,
+ "scores": {
+  "sentences": 300,
+  "gold_facts": 362,
+  "predicted_facts": 475,
+  "fact": {
+   "precision": 0.1663,
+   "recall": 0.2182,
+   "f1": 0.1888
+  },
+  "value": {
+   "precision": 0.3895,
+   "recall": 0.511,
+   "f1": 0.4421
+  },
+  "exact_match": 0.1167,
+  "valid_json": 0.99,
+  "per_tag": {
+   "AllocatedShareBasedCompensationExpense": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 31
+   },
+   "AmortizationOfIntangibleAssets": {
+    "precision": 0.44,
+    "recall": 0.7333,
+    "f1": 0.55,
+    "gold": 15
+   },
+   "AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount": {
+    "precision": 0.3333,
+    "recall": 0.1923,
+    "f1": 0.2439,
+    "gold": 26
+   },
+   "ConcentrationRiskPercentage1": {
+    "precision": 0.2857,
+    "recall": 0.1143,
+    "f1": 0.1633,
+    "gold": 35
+   },
+   "DebtInstrumentBasisSpreadOnVariableRate1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 30
+   },
+   "DebtInstrumentFaceAmount": {
+    "precision": 0.1579,
+    "recall": 0.2308,
+    "f1": 0.1875,
+    "gold": 39
+   },
+   "DebtInstrumentInterestRateStatedPercentage": {
+    "precision": 0.1616,
+    "recall": 0.3265,
+    "f1": 0.2162,
+    "gold": 49
+   },
+   "EffectiveIncomeTaxRateContinuingOperations": {
+    "precision": 0.2031,
+    "recall": 0.4194,
+    "f1": 0.2737,
+    "gold": 31
+   },
+   "EquityMethodInvestmentOwnershipPercentage": {
+    "precision": 0.125,
+    "recall": 0.0455,
+    "f1": 0.0667,
+    "gold": 22
+   },
+   "IncomeTaxExpenseBenefit": {
+    "precision": 0.3077,
+    "recall": 0.3333,
+    "f1": 0.32,
+    "gold": 24
+   },
+   "LineOfCreditFacilityMaximumBorrowingCapacity": {
+    "precision": 0.0795,
+    "recall": 0.2449,
+    "f1": 0.12,
+    "gold": 49
+   },
+   "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "gold": 11
+   }
+  }
+ },
+ "latency_s": {
+  "mean": 1.255,
+  "p50": 0.972,
+  "p95": 2.35
+ },
+ "tokens_per_request": {
+  "prompt": 393.1,
+  "prompt_not_cached": 55.9,
+  "completion": 42.2
+ },
+ "warmup_response_usage": {
+  "usage": {
+   "completion_tokens": 26,
+   "prompt_tokens": 376,
+   "total_tokens": 402,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "timings": {
+   "cache_n": 0,
+   "prompt_n": 376,
+   "prompt_ms": 1306.187,
+   "prompt_per_token_ms": 3.4739015957446804,
+   "prompt_per_second": 287.86077338084056,
+   "predicted_n": 26,
+   "predicted_ms": 618.7,
+   "predicted_per_token_ms": 24.748,
+   "predicted_per_second": 40.40730564085987
+  }
+ }
+}

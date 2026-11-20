@@ -1,0 +1,28 @@
+{
+ "config": {
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "lr": 0.0002,
+  "epochs": 1,
+  "batch_size": 4,
+  "grad_accum": 4,
+  "warmup_frac": 0.05,
+  "max_len": 1024,
+  "seed": 0,
+  "max_minutes": 300.0,
+  "gradient_checkpointing": true
+ },
+ "train_examples": 2000,
+ "val_examples": 150,
+ "steps": 99,
+ "planned_steps": 125,
+ "stopped_early": true,
+ "minutes": 308.5,
+ "trainable_params": 8798208,
+ "val_loss_before": 0.5698,
+ "val_loss_after": 0.0234,
+ "threads": 4,
+ "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+ "base_revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+}

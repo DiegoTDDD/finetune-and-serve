@@ -1,0 +1,137 @@
+{
+ "name": "base-3b-few-shot",
+ "model_file": "qwen2.5-3b-instruct-q4_k_m.gguf",
+ "model_bytes": 2104932768,
+ "shots": 6,
+ "shot_ids": [
+  "validation-969541",
+  "validation-912709",
+  "validation-950202",
+  "validation-951480",
+  "validation-957576",
+  "validation-1007120"
+ ],
+ "threads": 4,
+ "scores": {
+  "sentences": 300,
+  "gold_facts": 362,
+  "predicted_facts": 336,
+  "fact": {
+   "precision": 0.6786,
+   "recall": 0.6298,
+   "f1": 0.6533
+  },
+  "value": {
+   "precision": 0.8125,
+   "recall": 0.7541,
+   "f1": 0.7822
+  },
+  "exact_match": 0.6,
+  "valid_json": 1.0,
+  "per_tag": {
+   "AllocatedShareBasedCompensationExpense": {
+    "precision": 0.7,
+    "recall": 0.6774,
+    "f1": 0.6885,
+    "gold": 31
+   },
+   "AmortizationOfIntangibleAssets": {
+    "precision": 1.0,
+    "recall": 0.9333,
+    "f1": 0.9655,
+    "gold": 15
+   },
+   "AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount": {
+    "precision": 0.875,
+    "recall": 0.5385,
+    "f1": 0.6667,
+    "gold": 26
+   },
+   "ConcentrationRiskPercentage1": {
+    "precision": 0.8182,
+    "recall": 0.2571,
+    "f1": 0.3913,
+    "gold": 35
+   },
+   "DebtInstrumentBasisSpreadOnVariableRate1": {
+    "precision": 0.7222,
+    "recall": 0.4333,
+    "f1": 0.5417,
+    "gold": 30
+   },
+   "DebtInstrumentFaceAmount": {
+    "precision": 0.5763,
+    "recall": 0.8718,
+    "f1": 0.6939,
+    "gold": 39
+   },
+   "DebtInstrumentInterestRateStatedPercentage": {
+    "precision": 0.6667,
+    "recall": 0.7755,
+    "f1": 0.717,
+    "gold": 49
+   },
+   "EffectiveIncomeTaxRateContinuingOperations": {
+    "precision": 0.5745,
+    "recall": 0.871,
+    "f1": 0.6923,
+    "gold": 31
+   },
+   "EquityMethodInvestmentOwnershipPercentage": {
+    "precision": 0.875,
+    "recall": 0.3182,
+    "f1": 0.4667,
+    "gold": 22
+   },
+   "IncomeTaxExpenseBenefit": {
+    "precision": 1.0,
+    "recall": 0.375,
+    "f1": 0.5455,
+    "gold": 24
+   },
+   "LineOfCreditFacilityMaximumBorrowingCapacity": {
+    "precision": 0.7959,
+    "recall": 0.7959,
+    "f1": 0.7959,
+    "gold": 49
+   },
+   "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod": {
+    "precision": 0.1667,
+    "recall": 0.2727,
+    "f1": 0.2069,
+    "gold": 11
+   }
+  }
+ },
+ "latency_s": {
+  "mean": 3.521,
+  "p50": 3.187,
+  "p95": 7.825
+ },
+ "tokens_per_request": {
+  "prompt": 760.1,
+  "prompt_not_cached": 55.9,
+  "completion": 30.2
+ },
+ "warmup_response_usage": {
+  "usage": {
+   "completion_tokens": 23,
+   "prompt_tokens": 743,
+   "total_tokens": 766,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "timings": {
+   "cache_n": 0,
+   "prompt_n": 743,
+   "prompt_ms": 6414.258,
+   "prompt_per_token_ms": 8.632917900403768,
+   "prompt_per_second": 115.8356898023123,
+   "predicted_n": 23,
+   "predicted_ms": 2141.868,
+   "predicted_per_token_ms": 97.35763636363636,
+   "predicted_per_second": 10.27140794857573
+  }
+ }
+}

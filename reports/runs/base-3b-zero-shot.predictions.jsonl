@@ -1,0 +1,300 @@
+{"id": "test-1073619", "output": "{\"facts\": []}", "seconds": 0.58, "prompt_tokens": 376, "cached_tokens": 375, "completion_tokens": 6}
+{"id": "test-1100962", "output": "{\"facts\": []}", "seconds": 1.055, "prompt_tokens": 393, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1012917", "output": "{\"facts\": []}", "seconds": 1.06, "prompt_tokens": 385, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1086867", "output": "{\"facts\": []}", "seconds": 1.022, "prompt_tokens": 375, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1072907", "output": "{\"facts\": []}", "seconds": 1.059, "prompt_tokens": 392, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1044421", "output": "{\"facts\": []}", "seconds": 1.339, "prompt_tokens": 430, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1072032", "output": "{\"facts\": []}", "seconds": 1.36, "prompt_tokens": 423, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1034346", "output": "{\"facts\": []}", "seconds": 1.029, "prompt_tokens": 378, "cached_tokens": 339, "completion_tokens": 6}
+{"id": "test-1119193", "output": "{\"facts\": [{\"value\": \"34.0\", \"tag\": \"ConcentrationRiskPercentage1\"}, {\"value\": \"32.0\", \"tag\": \"ConcentrationRiskPercentage1\"}, {\"value\": \"28.1\", \"tag\": \"ConcentrationRiskPercentage1\"}]}", "seconds": 6.483, "prompt_tokens": 400, "cached_tokens": 337, "completion_tokens": 62}
+{"id": "test-1070016", "output": "{\"facts\": []}", "seconds": 1.047, "prompt_tokens": 381, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1103037", "output": "{\"facts\": []}", "seconds": 1.051, "prompt_tokens": 388, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1108763", "output": "{\"facts\": []}", "seconds": 0.818, "prompt_tokens": 368, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1080503", "output": "{\"facts\": []}", "seconds": 1.319, "prompt_tokens": 414, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1029858", "output": "{\"facts\": []}", "seconds": 1.285, "prompt_tokens": 411, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1030732", "output": "{\"facts\": []}", "seconds": 1.021, "prompt_tokens": 377, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1114837", "output": "{\"facts\": [{\"value\": \"0.2\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}, {\"value\": \"25.9\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 4.9, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 46}
+{"id": "test-1103906", "output": "{\"facts\": []}", "seconds": 1.329, "prompt_tokens": 415, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1036439", "output": "{\"facts\": []}", "seconds": 1.076, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1030466", "output": "{\"facts\": []}", "seconds": 1.019, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1045538", "output": "{\"facts\": []}", "seconds": 1.04, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1070584", "output": "{\"facts\": []}", "seconds": 1.089, "prompt_tokens": 400, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1100311", "output": "{\"facts\": []}", "seconds": 1.312, "prompt_tokens": 418, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1079562", "output": "{\"facts\": []}", "seconds": 1.327, "prompt_tokens": 405, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1037543", "output": "{\"facts\": []}", "seconds": 1.059, "prompt_tokens": 393, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1020044", "output": "{\"facts\": []}", "seconds": 1.043, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1065973", "output": "{\"facts\": []}", "seconds": 1.035, "prompt_tokens": 390, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1061061", "output": "{\"facts\": []}", "seconds": 1.084, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1073246", "output": "{\"facts\": [{\"value\": \"37822\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}, {\"value\": \"37822\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}]}", "seconds": 5.359, "prompt_tokens": 409, "cached_tokens": 337, "completion_tokens": 49}
+{"id": "test-1033199", "output": "{\"facts\": []}", "seconds": 1.127, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1105196", "output": "{\"facts\": []}", "seconds": 0.976, "prompt_tokens": 379, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1021830", "output": "{\"facts\": []}", "seconds": 1.291, "prompt_tokens": 415, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1076366", "output": "{\"facts\": []}", "seconds": 1.296, "prompt_tokens": 407, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1050324", "output": "{\"facts\": []}", "seconds": 1.095, "prompt_tokens": 399, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1047222", "output": "{\"facts\": []}", "seconds": 0.939, "prompt_tokens": 370, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1055308", "output": "{\"facts\": []}", "seconds": 1.323, "prompt_tokens": 430, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1018557", "output": "{\"facts\": []}", "seconds": 1.031, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1107115", "output": "{\"facts\": []}", "seconds": 1.043, "prompt_tokens": 393, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1023300", "output": "{\"facts\": []}", "seconds": 1.024, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1104311", "output": "{\"facts\": []}", "seconds": 1.046, "prompt_tokens": 393, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1079373", "output": "{\"facts\": []}", "seconds": 1.007, "prompt_tokens": 371, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1078454", "output": "{\"facts\": []}", "seconds": 1.096, "prompt_tokens": 400, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1028041", "output": "{\"facts\": []}", "seconds": 1.04, "prompt_tokens": 390, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1040464", "output": "{\"facts\": []}", "seconds": 1.106, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1049382", "output": "{\"facts\": []}", "seconds": 1.064, "prompt_tokens": 394, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1068518", "output": "{\"facts\": []}", "seconds": 1.05, "prompt_tokens": 390, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1041598", "output": "{\"facts\": []}", "seconds": 1.038, "prompt_tokens": 378, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1020565", "output": "{\"facts\": []}", "seconds": 1.074, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1074768", "output": "{\"facts\": []}", "seconds": 1.02, "prompt_tokens": 371, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1014140", "output": "{\"facts\": []}", "seconds": 1.309, "prompt_tokens": 415, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1036418", "output": "{\"facts\": []}", "seconds": 1.306, "prompt_tokens": 405, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1015428", "output": "{\"facts\": []}", "seconds": 1.072, "prompt_tokens": 394, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1031565", "output": "{\"facts\": []}", "seconds": 1.036, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1031539", "output": "{\"facts\": []}", "seconds": 1.311, "prompt_tokens": 405, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1023500", "output": "{\"facts\": []}", "seconds": 1.318, "prompt_tokens": 408, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1060992", "output": "{\"facts\": []}", "seconds": 1.035, "prompt_tokens": 388, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1078784", "output": "{\"facts\": []}", "seconds": 1.079, "prompt_tokens": 394, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1062159", "output": "{\"facts\": [{\"value\": \"24.3\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 2.926, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 26}
+{"id": "test-1063068", "output": "{\"facts\": []}", "seconds": 1.04, "prompt_tokens": 380, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1045399", "output": "{\"facts\": []}", "seconds": 1.082, "prompt_tokens": 396, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1019694", "output": "{\"facts\": []}", "seconds": 1.09, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1077116", "output": "{\"facts\": [{\"value\": \"3.28\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.806, "prompt_tokens": 360, "cached_tokens": 337, "completion_tokens": 27}
+{"id": "test-1055978", "output": "{\"facts\": []}", "seconds": 1.321, "prompt_tokens": 418, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1114363", "output": "{\"facts\": []}", "seconds": 0.8, "prompt_tokens": 367, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1023464", "output": "{\"facts\": [{\"value\": \"172.5\", \"tag\": \"DebtInstrumentFaceAmount\"}]}", "seconds": 3.145, "prompt_tokens": 409, "cached_tokens": 337, "completion_tokens": 25}
+{"id": "test-1015550", "output": "{\"facts\": []}", "seconds": 1.067, "prompt_tokens": 392, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1027617", "output": "{\"facts\": []}", "seconds": 1.307, "prompt_tokens": 409, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1067813", "output": "{\"facts\": []}", "seconds": 1.035, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1038614", "output": "{\"facts\": []}", "seconds": 0.734, "prompt_tokens": 354, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1073541", "output": "{\"facts\": [{\"value\": \"65.1\", \"tag\": \"ConcentrationRiskPercentage1\"}, {\"value\": \"65.5\", \"tag\": \"ConcentrationRiskPercentage1\"}]}", "seconds": 4.778, "prompt_tokens": 416, "cached_tokens": 337, "completion_tokens": 43}
+{"id": "test-1054755", "output": "{\"facts\": []}", "seconds": 1.084, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1065070", "output": "{\"facts\": []}", "seconds": 1.318, "prompt_tokens": 418, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1016333", "output": "{\"facts\": []}", "seconds": 1.279, "prompt_tokens": 407, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1058496", "output": "{\"facts\": []}", "seconds": 1.291, "prompt_tokens": 422, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1014686", "output": "{\"facts\": []}", "seconds": 1.007, "prompt_tokens": 387, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1017189", "output": "{\"facts\": []}", "seconds": 1.001, "prompt_tokens": 385, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1067886", "output": "{\"facts\": [{\"value\": \"2.0\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.957, "prompt_tokens": 394, "cached_tokens": 337, "completion_tokens": 26}
+{"id": "test-1099913", "output": "{\"facts\": []}", "seconds": 0.969, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1060047", "output": "{\"facts\": []}", "seconds": 0.996, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1020553", "output": "{\"facts\": [{\"value\": \"2\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.689, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 24}
+{"id": "test-1053819", "output": "{\"facts\": []}", "seconds": 0.769, "prompt_tokens": 364, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1022313", "output": "{\"facts\": []}", "seconds": 1.023, "prompt_tokens": 390, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1102905", "output": "{\"facts\": []}", "seconds": 1.048, "prompt_tokens": 395, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1058275", "output": "{\"facts\": []}", "seconds": 0.959, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1056869", "output": "{\"facts\": []}", "seconds": 1.007, "prompt_tokens": 385, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1092381", "output": "{\"facts\": []}", "seconds": 0.995, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1096831", "output": "{\"facts\": []}", "seconds": 1.308, "prompt_tokens": 415, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1032544", "output": "{\"facts\": [{\"value\": \"3.24\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"1082.8\", \"tag\": \"DebtInstrumentFaceAmount\"}]}", "seconds": 5.045, "prompt_tokens": 399, "cached_tokens": 337, "completion_tokens": 48}
+{"id": "test-1020989", "output": "{\"facts\": []}", "seconds": 1.304, "prompt_tokens": 425, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1049555", "output": "{\"facts\": [{\"value\": \"4.7\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 2.808, "prompt_tokens": 386, "cached_tokens": 337, "completion_tokens": 25}
+{"id": "test-1017781", "output": "{\"facts\": []}", "seconds": 0.95, "prompt_tokens": 370, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1019815", "output": "{\"facts\": []}", "seconds": 1.022, "prompt_tokens": 386, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1097802", "output": "{\"facts\": []}", "seconds": 1.052, "prompt_tokens": 392, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1094893", "output": "{\"facts\": []}", "seconds": 0.991, "prompt_tokens": 380, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1111096", "output": "{\"facts\": []}", "seconds": 1.034, "prompt_tokens": 401, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1054739", "output": "{\"facts\": [{\"value\": \"12.7\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 2.624, "prompt_tokens": 356, "cached_tokens": 337, "completion_tokens": 26}
+{"id": "test-1083625", "output": "{\"facts\": []}", "seconds": 0.788, "prompt_tokens": 367, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1063320", "output": "{\"facts\": []}", "seconds": 0.802, "prompt_tokens": 367, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1050519", "output": "{\"facts\": []}", "seconds": 1.296, "prompt_tokens": 406, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1084914", "output": "{\"facts\": []}", "seconds": 0.994, "prompt_tokens": 370, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1069124", "output": "{\"facts\": []}", "seconds": 1.036, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1023054", "output": "{\"facts\": []}", "seconds": 1.092, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1095167", "output": "{\"facts\": []}", "seconds": 1.32, "prompt_tokens": 407, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1032706", "output": "{\"facts\": []}", "seconds": 1.042, "prompt_tokens": 386, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1092782", "output": "{\"facts\": []}", "seconds": 1.014, "prompt_tokens": 371, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1048110", "output": "{\"facts\": []}", "seconds": 1.276, "prompt_tokens": 406, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1091418", "output": "{\"facts\": []}", "seconds": 0.789, "prompt_tokens": 365, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1112730", "output": "{\"facts\": []}", "seconds": 1.007, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1030724", "output": "{\"facts\": [{\"value\": \"5.375\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.211, "prompt_tokens": 400, "cached_tokens": 337, "completion_tokens": 28}
+{"id": "test-1077050", "output": "{\"facts\": []}", "seconds": 0.975, "prompt_tokens": 377, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1073421", "output": "{\"facts\": []}", "seconds": 0.99, "prompt_tokens": 386, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1104555", "output": "{\"facts\": []}", "seconds": 1.005, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1102844", "output": "{\"facts\": [{\"value\": \"12.0\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.305, "prompt_tokens": 402, "cached_tokens": 337, "completion_tokens": 27}
+{"id": "test-1069848", "output": "{\"facts\": []}", "seconds": 1.09, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1103631", "output": "{\"facts\": []}", "seconds": 1.29, "prompt_tokens": 409, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1040139", "output": "{\"facts\": []}", "seconds": 0.949, "prompt_tokens": 373, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1097529", "output": "{\"facts\": [{\"value\": \"156328\", \"tag\": \"DebtInstrumentFaceAmount\"}, {\"value\": \"3.23\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 5.043, "prompt_tokens": 389, "cached_tokens": 337, "completion_tokens": 48}
+{"id": "test-1058380", "output": "{\"facts\": []}", "seconds": 1.326, "prompt_tokens": 423, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1073370", "output": "{\"facts\": []}", "seconds": 1.106, "prompt_tokens": 396, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1020356", "output": "{\"facts\": []}", "seconds": 0.999, "prompt_tokens": 385, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1050954", "output": "{\"facts\": []}", "seconds": 1.516, "prompt_tokens": 445, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1098966", "output": "{\"facts\": []}", "seconds": 1.344, "prompt_tokens": 424, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1073269", "output": "{\"facts\": []}", "seconds": 1.295, "prompt_tokens": 418, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1093758", "output": "{\"facts\": []}", "seconds": 0.981, "prompt_tokens": 376, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1098290", "output": "{\"facts\": []}", "seconds": 1.02, "prompt_tokens": 385, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1049087", "output": "{\"facts\": []}", "seconds": 1.078, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1015789", "output": "{\"facts\": []}", "seconds": 1.025, "prompt_tokens": 379, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1090802", "output": "{\"facts\": []}", "seconds": 1.023, "prompt_tokens": 376, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1024642", "output": "{\"facts\": []}", "seconds": 1.025, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1081509", "output": "{\"facts\": []}", "seconds": 1.3, "prompt_tokens": 403, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1035004", "output": "{\"facts\": []}", "seconds": 1.069, "prompt_tokens": 397, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1021116", "output": "{\"facts\": []}", "seconds": 1.039, "prompt_tokens": 390, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1083832", "output": "{\"facts\": []}", "seconds": 1.031, "prompt_tokens": 387, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1050194", "output": "{\"facts\": []}", "seconds": 1.017, "prompt_tokens": 375, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1099772", "output": "{\"facts\": [{\"value\": \"4.875\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.382, "prompt_tokens": 404, "cached_tokens": 337, "completion_tokens": 28}
+{"id": "test-1033983", "output": "{\"facts\": []}", "seconds": 1.072, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1061586", "output": "{\"facts\":[]}", "seconds": 0.939, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 5}
+{"id": "test-1070279", "output": "{\"facts\": []}", "seconds": 1.509, "prompt_tokens": 436, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1120273", "output": "{\"facts\": [{\"value\": \"0.25\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.068, "prompt_tokens": 394, "cached_tokens": 337, "completion_tokens": 27}
+{"id": "test-1032446", "output": "{\"facts\": []}", "seconds": 1.282, "prompt_tokens": 411, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1030269", "output": "{\"facts\": []}", "seconds": 1.018, "prompt_tokens": 385, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1076321", "output": "{\"facts\": []}", "seconds": 1.29, "prompt_tokens": 406, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1107606", "output": "{\"facts\": []}", "seconds": 0.964, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1053001", "output": "{\"facts\": [{\"value\": \"4.375\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.144, "prompt_tokens": 392, "cached_tokens": 337, "completion_tokens": 28}
+{"id": "test-1071835", "output": "{\"facts\": [{\"value\": \"23.5\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 2.948, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 26}
+{"id": "test-1053277", "output": "{\"facts\": []}", "seconds": 1.016, "prompt_tokens": 381, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1106132", "output": "{\"facts\": []}", "seconds": 1.107, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1045034", "output": "{\"facts\": [{\"value\": \"1.533\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"5.950\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"6.450\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 7.723, "prompt_tokens": 409, "cached_tokens": 337, "completion_tokens": 74}
+{"id": "test-1109852", "output": "{\"facts\": []}", "seconds": 1.299, "prompt_tokens": 423, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1086567", "output": "{\"facts\": []}", "seconds": 1.008, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1107900", "output": "{\"facts\": []}", "seconds": 1.027, "prompt_tokens": 387, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1082705", "output": "{\"facts\": []}", "seconds": 1.044, "prompt_tokens": 392, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1063658", "output": "{\"facts\": []}", "seconds": 1.074, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1069738", "output": "{\"facts\": []}", "seconds": 1.015, "prompt_tokens": 370, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1042729", "output": "{\"facts\": []}", "seconds": 1.03, "prompt_tokens": 387, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1026083", "output": "{\"facts\": []}", "seconds": 0.793, "prompt_tokens": 368, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1050117", "output": "{\"facts\": [{\"value\": \"3.75\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"4.75\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 5.054, "prompt_tokens": 372, "cached_tokens": 337, "completion_tokens": 49}
+{"id": "test-1053517", "output": "{\"facts\": []}", "seconds": 1.05, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1078195", "output": "{\"facts\": []}", "seconds": 1.027, "prompt_tokens": 386, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1046271", "output": "{\"facts\": []}", "seconds": 1.01, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1120262", "output": "{\"facts\": []}", "seconds": 1.095, "prompt_tokens": 401, "cached_tokens": 339, "completion_tokens": 6}
+{"id": "test-1104553", "output": "{\"facts\": []}", "seconds": 1.148, "prompt_tokens": 399, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1103145", "output": "{\"facts\": []}", "seconds": 1.285, "prompt_tokens": 415, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1068897", "output": "{\"facts\": []}", "seconds": 1.312, "prompt_tokens": 422, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1017114", "output": "{\"facts\": []}", "seconds": 1.009, "prompt_tokens": 387, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1060540", "output": "{\"facts\": []}", "seconds": 0.759, "prompt_tokens": 362, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1113114", "output": "{\"facts\": [{\"value\": \"1.015\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.063, "prompt_tokens": 381, "cached_tokens": 338, "completion_tokens": 28}
+{"id": "test-1069645", "output": "{\"facts\": [{\"value\": \"1.3\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}, {\"value\": \"2.3\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}, {\"value\": \"5.0\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}, {\"value\": \"2.9\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}]}", "seconds": 8.805, "prompt_tokens": 422, "cached_tokens": 338, "completion_tokens": 85}
+{"id": "test-1082736", "output": "{\"facts\": []}", "seconds": 1.005, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1068681", "output": "{\"facts\": []}", "seconds": 1.104, "prompt_tokens": 400, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1013104", "output": "{\"facts\": []}", "seconds": 1.036, "prompt_tokens": 389, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1115387", "output": "{\"facts\": []}", "seconds": 1.329, "prompt_tokens": 422, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1032548", "output": "{\"facts\": []}", "seconds": 1.035, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1105197", "output": "{\"facts\": [{\"value\": \"99.97\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"300.0\", \"tag\": \"DebtInstrumentFaceAmount\"}]}", "seconds": 5.211, "prompt_tokens": 409, "cached_tokens": 337, "completion_tokens": 48}
+{"id": "test-1078759", "output": "{\"facts\": []}", "seconds": 1.057, "prompt_tokens": 395, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1080699", "output": "{\"facts\": []}", "seconds": 1.292, "prompt_tokens": 419, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1113962", "output": "{\"facts\": [{\"value\": \"3.00\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"2.50\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 4.778, "prompt_tokens": 367, "cached_tokens": 337, "completion_tokens": 49}
+{"id": "test-1101023", "output": "{\"facts\": []}", "seconds": 1.279, "prompt_tokens": 402, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1023857", "output": "{\"facts\": []}", "seconds": 1.28, "prompt_tokens": 411, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1096698", "output": "{\"facts\": []}", "seconds": 0.973, "prompt_tokens": 378, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1032568", "output": "{\"facts\": []}", "seconds": 0.97, "prompt_tokens": 375, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1118090", "output": "{\"facts\": [{\"value\": \"6.375\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.851, "prompt_tokens": 369, "cached_tokens": 337, "completion_tokens": 28}
+{"id": "test-1029053", "output": "{\"facts\": []}", "seconds": 1.029, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1024238", "output": "{\"facts\": []}", "seconds": 0.982, "prompt_tokens": 380, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1100501", "output": "{\"facts\": []}", "seconds": 1.286, "prompt_tokens": 417, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1096627", "output": "{\"facts\": [{\"value\": \"5.6\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}, {\"value\": \"433.3\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 4.842, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 47}
+{"id": "test-1106032", "output": "{\"facts\": []}", "seconds": 0.958, "prompt_tokens": 375, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1044523", "output": "{\"facts\": []}", "seconds": 1.283, "prompt_tokens": 407, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1048852", "output": "{\"facts\": []}", "seconds": 0.966, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1083096", "output": "{\"facts\": []}", "seconds": 1.042, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1082982", "output": "{\"facts\": []}", "seconds": 1.1, "prompt_tokens": 399, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1044429", "output": "{\"facts\": []}", "seconds": 1.27, "prompt_tokens": 405, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1018469", "output": "{\"facts\": []}", "seconds": 1.315, "prompt_tokens": 429, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1092701", "output": "{\"facts\": []}", "seconds": 0.976, "prompt_tokens": 378, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1042300", "output": "{\"facts\": []}", "seconds": 1.295, "prompt_tokens": 421, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1034894", "output": "{\"facts\": []}", "seconds": 0.992, "prompt_tokens": 379, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1093626", "output": "{\"facts\": []}", "seconds": 0.798, "prompt_tokens": 367, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1047893", "output": "{\"facts\": [{\"value\": \"1.9\", \"tag\": \"AmortizationOfIntangibleAssets\"}, {\"value\": \"5.8\", \"tag\": \"AmortizationOfIntangibleAssets\"}, {\"value\": \"1.6\", \"tag\": \"AmortizationOfIntangibleAssets\"}, {\"value\": \"3.8\", \"tag\": \"AmortizationOfIntangibleAssets\"}]}", "seconds": 8.821, "prompt_tokens": 428, "cached_tokens": 337, "completion_tokens": 85}
+{"id": "test-1102239", "output": "{\"facts\": []}", "seconds": 0.795, "prompt_tokens": 369, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1109864", "output": "{\"facts\": []}", "seconds": 0.787, "prompt_tokens": 365, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1052831", "output": "{\"facts\": []}", "seconds": 1.525, "prompt_tokens": 440, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1048474", "output": "{\"facts\": []}", "seconds": 1.038, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1098967", "output": "{\"facts\": []}", "seconds": 0.722, "prompt_tokens": 359, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1034431", "output": "{\"facts\": []}", "seconds": 1.348, "prompt_tokens": 429, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1052825", "output": "{\"facts\": []}", "seconds": 1.288, "prompt_tokens": 402, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1100305", "output": "{\"facts\": [{\"value\": \"4.21\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.938, "prompt_tokens": 374, "cached_tokens": 338, "completion_tokens": 27}
+{"id": "test-1030188", "output": "{\"facts\": []}", "seconds": 1.029, "prompt_tokens": 392, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1083849", "output": "{\"facts\": []}", "seconds": 0.99, "prompt_tokens": 379, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1031491", "output": "{\"facts\": [{\"value\": \"1.50\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.784, "prompt_tokens": 369, "cached_tokens": 337, "completion_tokens": 27}
+{"id": "test-1118413", "output": "{\"facts\": []}", "seconds": 1.01, "prompt_tokens": 385, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1074182", "output": "{\"facts\": []}", "seconds": 0.768, "prompt_tokens": 363, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1059219", "output": "{\"facts\": []}", "seconds": 1.005, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1100309", "output": "{\"facts\": []}", "seconds": 0.721, "prompt_tokens": 356, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1043111", "output": "{\"facts\": []}", "seconds": 0.775, "prompt_tokens": 369, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1111280", "output": "{\"facts\": [{\"value\": \"3.65\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"700\", \"tag\": \"DebtInstrumentFaceAmount\"}, {\"value\": \"400\", \"tag\": \"DebtInstrumentFaceAmount\"}]}", "seconds": 6.927, "prompt_tokens": 462, "cached_tokens": 337, "completion_tokens": 63}
+{"id": "test-1117151", "output": "{\"facts\": []}", "seconds": 1.068, "prompt_tokens": 395, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1080280", "output": "{\"facts\": []}", "seconds": 1.037, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1081728", "output": "{\"facts\": []}", "seconds": 0.956, "prompt_tokens": 371, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1080695", "output": "{\"facts\": []}", "seconds": 1.111, "prompt_tokens": 399, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1012990", "output": "{\"facts\": [{\"value\": \"5.75\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.318, "prompt_tokens": 405, "cached_tokens": 337, "completion_tokens": 27}
+{"id": "test-1033531", "output": "{\"facts\": []}", "seconds": 1.065, "prompt_tokens": 395, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1018022", "output": "{\"facts\": []}", "seconds": 1.011, "prompt_tokens": 383, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1102602", "output": "{\"facts\": []}", "seconds": 1.335, "prompt_tokens": 407, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1105512", "output": "{\"facts\": []}", "seconds": 1.101, "prompt_tokens": 399, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1056782", "output": "{\"facts\": []}", "seconds": 0.75, "prompt_tokens": 363, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1060828", "output": "{\"facts\": []}", "seconds": 1.301, "prompt_tokens": 407, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1116628", "output": "{\"facts\": []}", "seconds": 1.003, "prompt_tokens": 387, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1076248", "output": "{\"facts\": [{\"value\": \"18.4\", \"tag\": \"AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount\"}, {\"value\": \"6.7\", \"tag\": \"AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount\"}]}", "seconds": 7.008, "prompt_tokens": 404, "cached_tokens": 337, "completion_tokens": 66}
+{"id": "test-1077674", "output": "{\"facts\": []}", "seconds": 1.026, "prompt_tokens": 387, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1077071", "output": "{\"facts\": []}", "seconds": 1.335, "prompt_tokens": 422, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1114313", "output": "{\"facts\": []}", "seconds": 1.441, "prompt_tokens": 414, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1018995", "output": "{\"facts\": [{\"value\": \"22\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}, {\"value\": \"17\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 4.802, "prompt_tokens": 404, "cached_tokens": 337, "completion_tokens": 43}
+{"id": "test-1018332", "output": "{\"facts\": []}", "seconds": 1.038, "prompt_tokens": 390, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1076128", "output": "{\"facts\": []}", "seconds": 1.306, "prompt_tokens": 416, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1048404", "output": "{\"facts\": []}", "seconds": 1.065, "prompt_tokens": 393, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1018162", "output": "{\"facts\": []}", "seconds": 1.042, "prompt_tokens": 390, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1050030", "output": "{\"facts\": []}", "seconds": 1.093, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1048423", "output": "{\"facts\": [{\"value\": \"1.75\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.785, "prompt_tokens": 362, "cached_tokens": 338, "completion_tokens": 27}
+{"id": "test-1072547", "output": "{\"facts\": []}", "seconds": 1.315, "prompt_tokens": 419, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1103915", "output": "{\"facts\": []}", "seconds": 1.321, "prompt_tokens": 424, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1081031", "output": "{\"facts\": []}", "seconds": 0.962, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1055310", "output": "{\"facts\": []}", "seconds": 1.301, "prompt_tokens": 412, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1067817", "output": "{\"facts\": []}", "seconds": 1.333, "prompt_tokens": 426, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1054080", "output": "{\"facts\": []}", "seconds": 1.085, "prompt_tokens": 394, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1094536", "output": "{\"facts\": []}", "seconds": 1.307, "prompt_tokens": 414, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1017873", "output": "{\"facts\": []}", "seconds": 1.018, "prompt_tokens": 375, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1070545", "output": "{\"facts\": []}", "seconds": 1.298, "prompt_tokens": 405, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1091316", "output": "{\"facts\": []}", "seconds": 1.041, "prompt_tokens": 381, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1043842", "output": "{\"facts\": []}", "seconds": 0.724, "prompt_tokens": 354, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1014144", "output": "{\"facts\": []}", "seconds": 1.047, "prompt_tokens": 387, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1047900", "output": "{\"facts\": []}", "seconds": 1.312, "prompt_tokens": 410, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1057053", "output": "{\"facts\": []}", "seconds": 1.104, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1070542", "output": "{\"facts\": []}", "seconds": 1.081, "prompt_tokens": 396, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1031673", "output": "{\"facts\": []}", "seconds": 1.333, "prompt_tokens": 412, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1103621", "output": "{\"facts\": []}", "seconds": 1.079, "prompt_tokens": 401, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1059664", "output": "{\"facts\": []}", "seconds": 1.328, "prompt_tokens": 420, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1018560", "output": "{\"facts\": [{\"value\": \"4.25\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"1.75\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 5.106, "prompt_tokens": 381, "cached_tokens": 337, "completion_tokens": 49}
+{"id": "test-1022921", "output": "{\"facts\": []}", "seconds": 0.961, "prompt_tokens": 370, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1073440", "output": "{\"facts\": []}", "seconds": 1.319, "prompt_tokens": 407, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1081287", "output": "{\"facts\": []}", "seconds": 1.064, "prompt_tokens": 393, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1100477", "output": "{\"facts\": []}", "seconds": 0.952, "prompt_tokens": 372, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1066390", "output": "{\"facts\": [{\"value\": \"1.5\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}, {\"value\": \"1.2\", \"tag\": \"AllocatedShareBasedCompensationExpense\"}]}", "seconds": 4.827, "prompt_tokens": 398, "cached_tokens": 337, "completion_tokens": 45}
+{"id": "test-1039556", "output": "{\"facts\": []}", "seconds": 0.953, "prompt_tokens": 372, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1070676", "output": "{\"facts\": []}", "seconds": 1.072, "prompt_tokens": 393, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1051823", "output": "{\"facts\": []}", "seconds": 0.97, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1113189", "output": "{\"facts\": []}", "seconds": 1.289, "prompt_tokens": 410, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1079284", "output": "{\"facts\": []}", "seconds": 0.989, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1115082", "output": "{\"facts\": []}", "seconds": 0.991, "prompt_tokens": 383, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1037448", "output": "{\"facts\": []}", "seconds": 1.32, "prompt_tokens": 423, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1073228", "output": "{\"facts\": []}", "seconds": 0.945, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1035882", "output": "{\"facts\": [{\"value\": \"6.257\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 3.396, "prompt_tokens": 403, "cached_tokens": 337, "completion_tokens": 28}
+{"id": "test-1077113", "output": "{\"facts\": []}", "seconds": 1.126, "prompt_tokens": 397, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1044207", "output": "{\"facts\": []}", "seconds": 1.308, "prompt_tokens": 416, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1063971", "output": "{\"facts\": []}", "seconds": 0.96, "prompt_tokens": 375, "cached_tokens": 338, "completion_tokens": 6}
+{"id": "test-1061315", "output": "{\"facts\": []}", "seconds": 0.983, "prompt_tokens": 376, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1093234", "output": "{\"facts\": []}", "seconds": 1.018, "prompt_tokens": 382, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1028057", "output": "{\"facts\": []}", "seconds": 0.988, "prompt_tokens": 374, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1019300", "output": "{\"facts\": [{\"value\": \"23.7\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}, {\"value\": \"23.2\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 4.979, "prompt_tokens": 389, "cached_tokens": 337, "completion_tokens": 47}
+{"id": "test-1039265", "output": "{\"facts\": [{\"value\": \"72.2\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 3.449, "prompt_tokens": 434, "cached_tokens": 337, "completion_tokens": 26}
+{"id": "test-1025892", "output": "{\"facts\": []}", "seconds": 1.043, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1053672", "output": "{\"facts\": []}", "seconds": 1.313, "prompt_tokens": 413, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1033849", "output": "{\"facts\": []}", "seconds": 1.319, "prompt_tokens": 419, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1097870", "output": "{\"facts\": [{\"value\": \"2.75\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 2.798, "prompt_tokens": 363, "cached_tokens": 337, "completion_tokens": 27}
+{"id": "test-1073652", "output": "{\"facts\": []}", "seconds": 0.974, "prompt_tokens": 379, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1028820", "output": "{\"facts\": []}", "seconds": 1.283, "prompt_tokens": 406, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1102869", "output": "{\"facts\": []}", "seconds": 1.053, "prompt_tokens": 401, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1066820", "output": "{\"facts\": []}", "seconds": 0.793, "prompt_tokens": 364, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1087260", "output": "{\"facts\": []}", "seconds": 1.069, "prompt_tokens": 392, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1114131", "output": "{\"facts\": []}", "seconds": 0.801, "prompt_tokens": 369, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1046533", "output": "{\"facts\": []}", "seconds": 1.011, "prompt_tokens": 378, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1013843", "output": "{\"facts\": []}", "seconds": 1.356, "prompt_tokens": 427, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1054240", "output": "{\"facts\": []}", "seconds": 1.309, "prompt_tokens": 415, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1016095", "output": "{\"facts\": [{\"value\": \"28.6\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}, {\"value\": \"30.5\", \"tag\": \"EffectiveIncomeTaxRateContinuingOperations\"}]}", "seconds": 5.218, "prompt_tokens": 403, "cached_tokens": 337, "completion_tokens": 47}
+{"id": "test-1096422", "output": "{\"facts\": [{\"value\": \"1.30\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}, {\"value\": \"1.90\", \"tag\": \"DebtInstrumentInterestRateStatedPercentage\"}]}", "seconds": 5.188, "prompt_tokens": 389, "cached_tokens": 337, "completion_tokens": 49}
+{"id": "test-1102284", "output": "{\"facts\": []}", "seconds": 1.059, "prompt_tokens": 391, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1056025", "output": "{\"facts\": []}", "seconds": 1.321, "prompt_tokens": 419, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1093222", "output": "{\"facts\": []}", "seconds": 1.017, "prompt_tokens": 394, "cached_tokens": 350, "completion_tokens": 6}
+{"id": "test-1035759", "output": "{\"facts\": []}", "seconds": 1.305, "prompt_tokens": 412, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1055650", "output": "{\"facts\": []}", "seconds": 1.014, "prompt_tokens": 384, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1110600", "output": "{\"facts\": []}", "seconds": 1.333, "prompt_tokens": 404, "cached_tokens": 337, "completion_tokens": 6}
+{"id": "test-1065992", "output": "{\"facts\": []}", "seconds": 1.339, "prompt_tokens": 430, "cached_tokens": 337, "completion_tokens": 6}

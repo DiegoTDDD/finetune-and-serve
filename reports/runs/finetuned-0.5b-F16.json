@@ -1,0 +1,130 @@
+{
+ "name": "finetuned-0.5b-F16",
+ "model_file": "finetuned-F16.gguf",
+ "model_bytes": 994156512,
+ "shots": 0,
+ "shot_ids": [],
+ "threads": 4,
+ "scores": {
+  "sentences": 300,
+  "gold_facts": 362,
+  "predicted_facts": 414,
+  "fact": {
+   "precision": 0.7754,
+   "recall": 0.8867,
+   "f1": 0.8273
+  },
+  "value": {
+   "precision": 0.8261,
+   "recall": 0.9448,
+   "f1": 0.8814
+  },
+  "exact_match": 0.7433,
+  "valid_json": 1.0,
+  "per_tag": {
+   "AllocatedShareBasedCompensationExpense": {
+    "precision": 0.9062,
+    "recall": 0.9355,
+    "f1": 0.9206,
+    "gold": 31
+   },
+   "AmortizationOfIntangibleAssets": {
+    "precision": 0.9333,
+    "recall": 0.9333,
+    "f1": 0.9333,
+    "gold": 15
+   },
+   "AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount": {
+    "precision": 0.9231,
+    "recall": 0.9231,
+    "f1": 0.9231,
+    "gold": 26
+   },
+   "ConcentrationRiskPercentage1": {
+    "precision": 0.9714,
+    "recall": 0.9714,
+    "f1": 0.9714,
+    "gold": 35
+   },
+   "DebtInstrumentBasisSpreadOnVariableRate1": {
+    "precision": 0.6279,
+    "recall": 0.9,
+    "f1": 0.7397,
+    "gold": 30
+   },
+   "DebtInstrumentFaceAmount": {
+    "precision": 0.5161,
+    "recall": 0.8205,
+    "f1": 0.6337,
+    "gold": 39
+   },
+   "DebtInstrumentInterestRateStatedPercentage": {
+    "precision": 0.8113,
+    "recall": 0.8776,
+    "f1": 0.8431,
+    "gold": 49
+   },
+   "EffectiveIncomeTaxRateContinuingOperations": {
+    "precision": 0.9118,
+    "recall": 1.0,
+    "f1": 0.9538,
+    "gold": 31
+   },
+   "EquityMethodInvestmentOwnershipPercentage": {
+    "precision": 0.8148,
+    "recall": 1.0,
+    "f1": 0.898,
+    "gold": 22
+   },
+   "IncomeTaxExpenseBenefit": {
+    "precision": 0.7778,
+    "recall": 0.875,
+    "f1": 0.8235,
+    "gold": 24
+   },
+   "LineOfCreditFacilityMaximumBorrowingCapacity": {
+    "precision": 0.7143,
+    "recall": 0.7143,
+    "f1": 0.7143,
+    "gold": 49
+   },
+   "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod": {
+    "precision": 0.8182,
+    "recall": 0.8182,
+    "f1": 0.8182,
+    "gold": 11
+   }
+  }
+ },
+ "latency_s": {
+  "mean": 1.696,
+  "p50": 1.491,
+  "p95": 3.373
+ },
+ "tokens_per_request": {
+  "prompt": 393.1,
+  "prompt_not_cached": 55.9,
+  "completion": 35.4
+ },
+ "warmup_response_usage": {
+  "usage": {
+   "completion_tokens": 23,
+   "prompt_tokens": 376,
+   "total_tokens": 399,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "timings": {
+   "cache_n": 0,
+   "prompt_n": 376,
+   "prompt_ms": 1330.53,
+   "prompt_per_token_ms": 3.5386436170212767,
+   "prompt_per_second": 282.5941542092249,
+   "predicted_n": 23,
+   "predicted_ms": 880.061,
+   "predicted_per_token_ms": 40.00277272727273,
+   "predicted_per_second": 24.998267165571477
+  }
+ }
+}

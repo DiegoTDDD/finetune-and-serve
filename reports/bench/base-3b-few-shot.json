@@ -1,0 +1,26 @@
+{
+ "name": "base-3b-few-shot",
+ "model_file": "qwen2.5-3b-instruct-q4_k_m.gguf",
+ "shots": 6,
+ "threads": 4,
+ "levels": [
+  {
+   "concurrency": 1,
+   "requests": 100,
+   "wall_seconds": 359.59,
+   "requests_per_second": 0.278,
+   "output_tokens_per_second": 8.4,
+   "latency_p50_s": 3.271,
+   "latency_p95_s": 7.475
+  },
+  {
+   "concurrency": 4,
+   "requests": 100,
+   "wall_seconds": 233.17,
+   "requests_per_second": 0.429,
+   "output_tokens_per_second": 12.7,
+   "latency_p50_s": 8.119,
+   "latency_p95_s": 20.159
+  }
+ ]
+}
