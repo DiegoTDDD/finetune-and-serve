@@ -145,14 +145,22 @@ def markdown(runs: dict, bench: dict, train: dict | None, cost: dict, prices: di
             )
         out += ["", "The APIs' accuracy on this task was not measured (no paid key is used in this project)."]
     if train:
+        per_step = train["config"]["batch_size"] * train["config"]["grad_accum"]
+        seen_n = min(train["steps"] * per_step, train["train_examples"])
+        seen = f"{train['steps']} optimizer steps of {per_step} examples ({seen_n:,} of {train['train_examples']:,})"
+        if train["stopped_early"]:
+            seen = (
+                f"The {train['config']['max_minutes']:.0f}-minute budget stopped training at step {train['steps']} "
+                f"of {train['planned_steps']}: {seen_n:,} of the {train['train_examples']:,} examples were seen"
+            )
         out += [
             "",
             "## Training",
             "",
             f"LoRA rank {train['config']['rank']} on all attention and MLP projections of {train['base_model']} "
-            f"({train['trainable_params'] / 1e6:.1f}M trainable parameters), {train['train_examples']} examples, "
-            f"{train['steps']} steps, {train['minutes']} minutes on {train['threads']} CPU threads. Validation loss on "
-            f"answer tokens: {train['val_loss_before']} before, {train['val_loss_after']} after.",
+            f"({train['trainable_params'] / 1e6:.1f}M trainable parameters), {train['minutes']} minutes on "
+            f"{train['threads']} CPU threads. {seen}. Validation loss on answer tokens: "
+            f"{train['val_loss_before']} before, {train['val_loss_after']} after.",
         ]
     return "\n".join(out) + "\n"
 

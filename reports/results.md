@@ -64,4 +64,4 @@ The APIs' accuracy on this task was not measured (no paid key is used in this pr
 
 ## Training
 
-LoRA rank 16 on all attention and MLP projections of Qwen/Qwen2.5-0.5B-Instruct (8.8M trainable parameters), 2000 examples, 99 steps, 308.5 minutes on 4 CPU threads. Validation loss on answer tokens: 0.5698 before, 0.0234 after.
+LoRA rank 16 on all attention and MLP projections of Qwen/Qwen2.5-0.5B-Instruct (8.8M trainable parameters), 308.5 minutes on 4 CPU threads. The 300-minute budget stopped training at step 99 of 125: 1,584 of the 2,000 examples were seen. Validation loss on answer tokens: 0.5698 before, 0.0234 after.
