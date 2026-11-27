@@ -54,7 +54,7 @@ def test_markdown_orders_by_fact_f1():
         "finetuned-0.5b-Q4_K_M": run("finetuned-0.5b-Q4_K_M", 0.9),
         "base-3b-few-shot": run("base-3b-few-shot", 0.6, 6),
     }
-    md = report.markdown(runs, {}, None, report.costs(runs, {}, PRICES), PRICES)
+    md = report.markdown(runs, {}, None, report.costs(runs, {}, PRICES), PRICES, {"intervals": {}, "differences": []})
     rows = [line for line in md.splitlines() if line.startswith("| ") and "-shot" in line and "MB" in line]
     assert [r.split(" | ")[0] for r in rows] == ["| finetuned-0.5b-Q4_K_M", "| base-3b-few-shot", "| a"]
     assert "## By concept" in md

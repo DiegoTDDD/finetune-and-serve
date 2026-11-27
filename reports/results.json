@@ -183,5 +183,73 @@
     "break_even_requests_per_month": 427969
    }
   ]
- }
+ },
+ "fact_f1_interval_95": {
+  "base-0.5b-few-shot": [
+   0.2051,
+   0.2986
+  ],
+  "base-0.5b-zero-shot": [
+   0.1474,
+   0.2322
+  ],
+  "base-3b-few-shot": [
+   0.5905,
+   0.7069
+  ],
+  "base-3b-zero-shot": [
+   0.1627,
+   0.3116
+  ],
+  "finetuned-0.5b-F16": [
+   0.785,
+   0.8642
+  ],
+  "finetuned-0.5b-Q4_K_M": [
+   0.7704,
+   0.8567
+  ],
+  "finetuned-0.5b-Q8_0": [
+   0.7509,
+   0.8415
+  ]
+ },
+ "differences": [
+  {
+   "a": "finetuned-0.5b-Q4_K_M",
+   "b": "base-3b-few-shot",
+   "question": "fine-tuned 0.5B vs the 3B model with examples",
+   "difference": 0.1623,
+   "low": 0.1033,
+   "high": 0.2253,
+   "p_value": 0.0
+  },
+  {
+   "a": "finetuned-0.5b-Q4_K_M",
+   "b": "base-0.5b-few-shot",
+   "question": "fine-tuning vs the same 0.5B model with examples",
+   "difference": 0.5625,
+   "low": 0.5035,
+   "high": 0.6216,
+   "p_value": 0.0
+  },
+  {
+   "a": "finetuned-0.5b-Q8_0",
+   "b": "finetuned-0.5b-Q4_K_M",
+   "question": "8-bit vs 4-bit quantization",
+   "difference": -0.0161,
+   "low": -0.0421,
+   "high": 0.0094,
+   "p_value": 0.22
+  },
+  {
+   "a": "finetuned-0.5b-F16",
+   "b": "finetuned-0.5b-Q4_K_M",
+   "question": "16-bit vs 4-bit quantization",
+   "difference": 0.0117,
+   "low": -0.0156,
+   "high": 0.042,
+   "p_value": 0.433
+  }
+ ]
 }

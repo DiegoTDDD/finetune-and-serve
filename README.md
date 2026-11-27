@@ -68,25 +68,35 @@ that produced these results committed [`reports/`](reports/) and published the
 
 From [`reports/results.md`](reports/results.md):
 
-| Model | Prompt | File | Fact F1 | Value F1 | Exact match | p50 latency |
-| --- | --- | --- | --- | --- | --- | --- |
-| Fine-tuned 0.5B, F16 | zero-shot | 994 MB | **0.827** | 0.881 | 0.743 | 1.49 s |
-| Fine-tuned 0.5B, Q4_K_M | zero-shot | 398 MB | **0.816** | 0.883 | 0.747 | 0.91 s |
-| Fine-tuned 0.5B, Q8_0 | zero-shot | 531 MB | 0.799 | 0.866 | 0.723 | 0.72 s |
-| Qwen2.5-3B | 6-shot | 2,105 MB | 0.653 | 0.782 | 0.600 | 3.19 s |
-| Qwen2.5-0.5B | 6-shot | 398 MB | 0.253 | 0.476 | 0.160 | 0.92 s |
-| Qwen2.5-3B | zero-shot | 2,105 MB | 0.240 | 0.296 | 0.287 | 1.07 s |
-| Qwen2.5-0.5B | zero-shot | 398 MB | 0.189 | 0.442 | 0.117 | 0.97 s |
+| Model | Prompt | File | Fact F1 | 95% interval | Value F1 | Exact match | p50 latency |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Fine-tuned 0.5B, F16 | zero-shot | 994 MB | **0.827** | 0.785 to 0.864 | 0.881 | 0.743 | 1.49 s |
+| Fine-tuned 0.5B, Q4_K_M | zero-shot | 398 MB | **0.816** | 0.770 to 0.857 | 0.883 | 0.747 | 0.91 s |
+| Fine-tuned 0.5B, Q8_0 | zero-shot | 531 MB | 0.799 | 0.751 to 0.842 | 0.866 | 0.723 | 0.72 s |
+| Qwen2.5-3B | 6-shot | 2,105 MB | 0.653 | 0.591 to 0.707 | 0.782 | 0.600 | 3.19 s |
+| Qwen2.5-0.5B | 6-shot | 398 MB | 0.253 | 0.205 to 0.299 | 0.476 | 0.160 | 0.92 s |
+| Qwen2.5-3B | zero-shot | 2,105 MB | 0.240 | 0.163 to 0.312 | 0.296 | 0.287 | 1.07 s |
+| Qwen2.5-0.5B | zero-shot | 398 MB | 0.189 | 0.147 to 0.232 | 0.442 | 0.117 | 0.97 s |
 
 Fact F1 counts a prediction only if both the number and the concept match the auditors' tag;
 value F1 ignores the concept; exact match is the share of sentences answered completely right.
+The interval is a 95% bootstrap over the 300 test sentences. Which differences are real, by a
+paired bootstrap (both models rescored on the same resampled sentences,
+[`ftserve/stats.py`](ftserve/stats.py)):
+
+| Comparison | Fact F1 difference | 95% interval | Conclusion |
+| --- | --- | --- | --- |
+| Fine-tuned 0.5B (Q4_K_M) vs Qwen2.5-3B with six examples | +0.162 | +0.103 to +0.225 | real (p < 0.001) |
+| Fine-tuned 0.5B (Q4_K_M) vs the same 0.5B with six examples | +0.562 | +0.503 to +0.622 | real (p < 0.001) |
+| Q8_0 vs Q4_K_M | -0.016 | -0.042 to +0.009 | not distinguishable (p = 0.22) |
+| F16 vs Q4_K_M | +0.012 | -0.016 to +0.042 | not distinguishable (p = 0.43) |
 
 - Fine-tuning moves the 0.5B model from 0.19 to 0.82 fact F1. It beats the 3B model with
   examples on ten of the twelve concepts (on amortization only by 0.968 to 0.966, which rounds to
   a tie in the results table); the 3B model is better on credit-line capacity (0.80 vs 0.73) and
   debt face amounts (0.69 vs 0.61).
-- Quantizing to 4 bits costs about one point of F1 (0.827 to 0.816) for a file 2.5 times
-  smaller. Q8_0 scoring slightly below Q4_K_M is within the noise of 300 sentences.
+- Quantizing to 4 bits gives a file 2.5 times smaller with no measurable loss: F16, Q8_0 and
+  Q4_K_M are within each other's noise at 300 sentences (the paired intervals include 0).
 - Without examples, the 3B model answers "no facts" for 257 of 300 sentences: it is cautious,
   not confused, and six examples are what make it usable.
 
@@ -108,7 +118,7 @@ accuracy on this task was not measured.
 
 ```bash
 pip install -r requirements.txt -r requirements-dev.txt
-pytest -q                                   # 26 tests: data, task, metrics, training, server, report
+pytest -q                                   # 30 tests: data, task, metrics, statistics, training, server, report
 gh workflow run pipeline.yml -f smoke=true  # the whole pipeline on a handful of examples
 gh workflow run pipeline.yml -f smoke=false # full run: about 6.5 hours on the free runner
 ```
@@ -119,11 +129,14 @@ gh workflow run pipeline.yml -f smoke=false # full run: about 6.5 hours on the f
 - [ADR 0002](docs/adr/0002-lora-on-a-cpu-runner.md): LoRA in full precision on a free CPU runner, not QLoRA on a GPU.
 - [ADR 0003](docs/adr/0003-same-stack-for-every-model.md): serve every model the same way, with the output schema enforced.
 - [ADR 0004](docs/adr/0004-cost-at-list-prices.md): compare cost at list prices with measured token counts.
+- [ADR 0005](docs/adr/0005-paired-bootstrap-for-model-comparisons.md): call a difference between models real only when a paired bootstrap interval excludes 0.
 
 ## Limits
 
-- One training run and one evaluation run: differences of a point or two between models (such as
-  Q8_0 against Q4_K_M) are not significant at 300 sentences.
+- One training run and one evaluation run. The bootstrap covers the choice of test sentences,
+  not training randomness: a second run with another seed could move the fine-tuned scores. The
+  quantization differences are not distinguishable at 300 sentences; a smaller difference than
+  about three points of F1 needs a larger test set.
 - Training stopped at 79% of one epoch because of the time budget; a longer run might do better.
 - Twelve concepts out of the 139 in FiNER; the prompt would not scale to all of them as written.
 - Cost figures assume the VM is fully used and ignore prompt caching discounts the APIs offer.
