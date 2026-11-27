@@ -82,8 +82,9 @@ Fact F1 counts a prediction only if both the number and the concept match the au
 value F1 ignores the concept; exact match is the share of sentences answered completely right.
 
 - Fine-tuning moves the 0.5B model from 0.19 to 0.82 fact F1. It beats the 3B model with
-  examples on ten of the twelve concepts; the 3B model is better on credit-line capacity
-  (0.80 vs 0.73) and debt face amounts (0.69 vs 0.61).
+  examples on ten of the twelve concepts (on amortization only by 0.968 to 0.966, which rounds to
+  a tie in the results table); the 3B model is better on credit-line capacity (0.80 vs 0.73) and
+  debt face amounts (0.69 vs 0.61).
 - Quantizing to 4 bits costs about one point of F1 (0.827 to 0.816) for a file 2.5 times
   smaller. Q8_0 scoring slightly below Q4_K_M is within the noise of 300 sentences.
 - Without examples, the 3B model answers "no facts" for 257 of 300 sentences: it is cautious,
