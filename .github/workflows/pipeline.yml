@@ -21,8 +21,8 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 340
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip
@@ -35,7 +35,7 @@ jobs:
           else
             python scripts/train.py --out build/finetuned --max-minutes 300
           fi
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: finetuned
           path: build/finetuned/
@@ -48,15 +48,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
       - name: llama.cpp source
         run: git clone --depth 1 --branch "$LLAMA_CPP_TAG" https://github.com/ggml-org/llama.cpp llama.cpp
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         id: llama-build
         with:
           path: llama.cpp/build/bin
@@ -69,7 +69,7 @@ jobs:
             -DLLAMA_USE_PREBUILT_UI=OFF -DLLAMA_BUILD_UI=OFF
           cmake --build llama.cpp/build -j4 --target llama-server llama-quantize
       - run: pip install ./llama.cpp/gguf-py
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: finetuned
           path: build/finetuned
@@ -103,7 +103,7 @@ jobs:
           cp build/finetuned/train_summary.json build/finetuned/train_history.json reports/
           python scripts/report.py
           cat reports/results.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: reports
