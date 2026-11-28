@@ -4,6 +4,8 @@ version = "0.1.0"
 requires-python = ">=3.11"
 
 [tool.ruff]
+# The pip-audit script is shared unchanged by every repository's security workflow.
+extend-exclude = [".github/scripts"]
 line-length = 120
 target-version = "py311"
 
